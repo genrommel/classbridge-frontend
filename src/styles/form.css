@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;;
+    box-sizing: border-box;
+}
+
+/* Setting the main title (login - ClassBridge) */
+
+.login-title{
+    font-size: 1.2rem;   
+    margin-bottom: 5em;
+}
+
+.login-title-bigger{
+    font-size: 2.2rem;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+.login-title-bigger-bold{
+    font-weight: 600;
+}
+
+
+/* Setting the styles for the Login Form (inputs,value,button) */
+
+
+.form-container{
+    display: grid;
+    gap: 1.8em;
+}
+
+
+.login-form-group{
+    position: relative;
+    --color: #5757577e;
+}
+.login-form-group input{
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 0.8rem;
+    padding: .6em .3em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.login-form-group input:focus + .login-label,
+.login-form-group input:not(:placeholder-shown) + .login-label{
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+}
+
+.login-label{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+
+
+/* Recover account / I forgot my password */
+
+
+.login-accountSaver{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+}
+
+.login-accountSaver label input{
+    margin-right: .3em;
+    transform: translateY(1px);
+}
+
+.login-accountSaver a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* styling the button */
+ 
+.login-button{
+    width: 45%;
+    font-weight: 200;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    font-weight: 100;
+    padding: .7em 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+.login-warning{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    margin: 20px auto;
+    width: 60%;
+    word-wrap: break-word;
+
+}
+
+
+/* Sign in if you don't have an account  */
+
+.signIn{
+    width: 70%;
+    margin: 2.8em auto;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    font-weight: 500;
+}
+
+.signIn-link{
+    color: inherit;
+}
+
+
+
+
+
+
+@media (max-width: 425px){
+    .login-title{
+        font-size: 1rem;   
+    }
+}
